@@ -1,0 +1,9 @@
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.exe.config
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.exe
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\GUI.csprojResolveAssemblyReference.cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Form1.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Properties.Resources.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\GUI.csproj.GenerateResource.Cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.exe
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.pdb
