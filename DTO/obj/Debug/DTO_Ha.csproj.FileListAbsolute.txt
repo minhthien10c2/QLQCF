@@ -1,0 +1,5 @@
+C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\obj\Debug\DTO_Ha.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\bin\Debug\DTO_Ha.dll
+C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\bin\Debug\DTO_Ha.pdb
+C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\obj\Debug\DTO_Ha.dll
+C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\obj\Debug\DTO_Ha.pdb

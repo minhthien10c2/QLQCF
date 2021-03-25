@@ -7,3 +7,6 @@ D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Properties.Resources.resour
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\GUI.csproj.GenerateResource.Cache
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.exe
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.pdb
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\bin\Debug\QLQCF.exe.config
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.exe
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.pdb

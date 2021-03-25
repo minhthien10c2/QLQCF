@@ -4,29 +4,42 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO
+namespace DTO_Ha
 {
-    class Bill_Detail_DTO
+    public class Bill_Detail_DTO
     {
-        private int idProduct;
-        private int idBill;
+        private String idProduct;
+        private String idBill;
+        private int quantity;
 
-        public int IdProduct
+        public String IdProduct
         {
             get { return idProduct; }
             set { idProduct = value; }
         }
 
-        public int IdBill
+        public String IdBill
         {
             get { return idBill; }
             set { idBill = value; }
         }
 
-        public Bill_Detail_DTO(int idproduct, int idbill)
+        public int Quantity
+        {
+            get { return quantity; }
+            set { quantity = value; }
+        }
+
+        public Bill_Detail_DTO()
+        {
+
+        }
+
+        public Bill_Detail_DTO(String idproduct, String idbill, int quantity)
         {
             this.idProduct = idproduct;
             this.idBill = idbill;
+            this.Quantity = quantity;
         }
     }
 }

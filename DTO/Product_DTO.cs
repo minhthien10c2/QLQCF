@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO
+namespace DTO_Ha
 {
     public class Product_DTO
     {
-        private int id;
+        private String id;
         private String productName;
         private float productPrice;
-        private int idCategory;
+        private String idCategory;
 
-        public int Id
+        public String Id
         {
             get { return id; }
             set { id = value; }
@@ -29,9 +29,9 @@ namespace DTO
         {
             get { return productPrice; }
             set { productPrice = value; }
-        }       
+        }
 
-        public int IdCategory
+        public String IdCategory
         {
             get { return idCategory; }
             set { idCategory = value; }
@@ -42,7 +42,7 @@ namespace DTO
 
         }
 
-        public Product_DTO(int id, String productname, float productprice, int idCategory)
+        public Product_DTO(String id, String productname, float productprice, String idCategory)
         {
             this.id = id;
             this.productName = productname;

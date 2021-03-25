@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO
+namespace DTO_Ha
 {
-    class Table_DTO
+    public class Table_DTO
     {
-        private int id;
+        private String id;
         private String tableName;
 
-        public int Id
+        public String Id
         {
             get { return id; }
             set { id = value; }
@@ -28,7 +28,7 @@ namespace DTO
 
         }
 
-        public Table_DTO(int id, String tablename)
+        public Table_DTO(String id, String tablename)
         {
             this.id = id;
             this.tableName = tablename;

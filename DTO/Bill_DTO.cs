@@ -4,16 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO
+namespace DTO_Ha
 {
-    class Bill_DTO
+    public class Bill_DTO
     {
-        private int id;
+        private String id;
         private double totalPrice;
         private DateTime checkIn;
         private DateTime checkOut;
+        private String idTable;
 
-        public int Id
+        public String Id
         {
             get { return id; }
             set { id = value; }
@@ -37,17 +38,24 @@ namespace DTO
             set { totalPrice = value; }
         }
 
+        public String IdTable
+        {
+            get { return idTable; }
+            set { idTable = value; }
+        }
+
         public Bill_DTO()
         {
 
         }
 
-        public Bill_DTO(int id, DateTime checkin, DateTime checkout, double totalprice)
+        public Bill_DTO(String id, DateTime checkin, DateTime checkout, double totalprice, String idtable)
         {
             this.id = id;
             this.checkIn = checkin;
             this.checkOut = checkout;
             this.totalPrice = totalprice;
+            this.idTable = idtable;
         }
     }
 }

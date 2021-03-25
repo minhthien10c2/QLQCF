@@ -7,7 +7,7 @@
     <ProjectGuid>{9D2AF284-92C7-4735-8487-D28081FA3743}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>BUS</RootNamespace>
+    <RootNamespace>BUS_Ha</RootNamespace>
     <AssemblyName>BUS</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -39,17 +39,21 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="Bill_BUS.cs" />
+    <Compile Include="Bill_Detail_BUS.cs" />
+    <Compile Include="Category_BUS.cs" />
+    <Compile Include="Product_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Table_BUS.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\DAL\DAL.csproj">
+    <ProjectReference Include="..\DAL\DAL_Ha.csproj">
       <Project>{c9fdf820-140b-400e-96cb-e3e8364f29c4}</Project>
-      <Name>DAL</Name>
+      <Name>DAL_Ha</Name>
     </ProjectReference>
-    <ProjectReference Include="..\DTO\DTO.csproj">
+    <ProjectReference Include="..\DTO\DTO_Ha.csproj">
       <Project>{ef8ba944-0121-4ea3-a7b6-3ccfa9a04a17}</Project>
-      <Name>DTO</Name>
+      <Name>DTO_Ha</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

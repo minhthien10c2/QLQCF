@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DTO
+namespace DTO_Ha
 {
-    class Category_DTO
+    public class Category_DTO
     {
-        private int id;
+        private String id;
         private String categoryName;
 
-        public int Id
+        public String Id
         {
             get { return id; }
             set { id = value; }
@@ -26,7 +26,7 @@ namespace DTO
         public Category_DTO()
         { }
 
-        public Category_DTO(int id, String categoryname)
+        public Category_DTO(String id, String categoryname)
         {
             this.id = id;
             this.categoryName = categoryname;

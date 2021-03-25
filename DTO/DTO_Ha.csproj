@@ -7,8 +7,8 @@
     <ProjectGuid>{EF8BA944-0121-4EA3-A7B6-3CCFA9A04A17}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>DTO</RootNamespace>
-    <AssemblyName>DTO</AssemblyName>
+    <RootNamespace>DTO_Ha</RootNamespace>
+    <AssemblyName>DTO_Ha</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Account_DTO.cs" />
     <Compile Include="Bill_Detail_DTO.cs" />
     <Compile Include="Bill_DTO.cs" />
     <Compile Include="Category_DTO.cs" />
