@@ -7,3 +7,12 @@ C:\Users\Administrator\Documents\GitHub\QLQCF\BUS\obj\Debug\BUS.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\BUS\obj\Debug\BUS.pdb
 C:\Users\Administrator\Documents\GitHub\QLQCF\BUS\bin\Debug\DTO_Ha.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\BUS\bin\Debug\DTO_Ha.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\BUS.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\BUS.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\DAL.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\DTO_Ha.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\DAL.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\bin\Debug\DTO_Ha.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\obj\Debug\BUS_Ha.csprojResolveAssemblyReference.cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\obj\Debug\BUS.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\BUS\obj\Debug\BUS.pdb

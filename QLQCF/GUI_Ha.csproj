@@ -105,6 +105,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="Table_GUI.resx">
       <DependentUpon>Table_GUI.cs</DependentUpon>
@@ -131,6 +132,9 @@
       <Project>{ef8ba944-0121-4ea3-a7b6-3ccfa9a04a17}</Project>
       <Name>DTO_Ha</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

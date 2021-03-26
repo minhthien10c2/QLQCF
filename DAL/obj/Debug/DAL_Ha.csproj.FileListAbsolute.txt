@@ -5,3 +5,10 @@ C:\Users\Administrator\Documents\GitHub\QLQCF\DAL\obj\Debug\DAL.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\DAL\obj\Debug\DAL.pdb
 C:\Users\Administrator\Documents\GitHub\QLQCF\DAL\bin\Debug\DTO_Ha.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\DAL\bin\Debug\DTO_Ha.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\bin\Debug\DAL.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\bin\Debug\DAL.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\bin\Debug\DTO_Ha.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\bin\Debug\DTO_Ha.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\obj\Debug\DAL_Ha.csprojResolveAssemblyReference.cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\obj\Debug\DAL.dll
+D:\Univesity\SYNC\HAUCAC\QLQCF\DAL\obj\Debug\DAL.pdb

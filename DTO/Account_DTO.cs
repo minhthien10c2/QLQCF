@@ -11,6 +11,10 @@ namespace DTO_Ha
         private String UserName;
         private String Password;
         private int Auth;
+        private String Name;
+        private int Gender;
+        private int Phone;
+        private String Address;
 
         public String UserName1
         {
@@ -30,16 +34,43 @@ namespace DTO_Ha
             set { Auth = value; }
         }
 
-        public Account_DTO()
+        public String Name1
         {
-
+            get { return Name; }
+            set { Name = value; }
         }
 
-        public Account_DTO(String username, String password, int auth)
+        public int Gender1
+        {
+            get { return Gender; }
+            set { Gender = value; }
+        }
+
+        public int Phone1
+        {
+            get { return Phone; }
+            set { Phone = value; }
+        }
+
+        public String Address1
+        {
+            get { return Address; }
+            set { Address = value; }
+        }
+
+        public Account_DTO()
+        {
+        }
+
+        public Account_DTO(String username, String password, int auth, String name, int gender, int phone, String address)
         {
             this.UserName = username;
             this.Password = password;
             this.Auth = auth;
+            this.Name = name;
+            this.Gender = gender;
+            this.Phone = phone;
+            this.Address = address;
         }
     }
 }

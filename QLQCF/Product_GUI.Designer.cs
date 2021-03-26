@@ -346,6 +346,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(785, 465);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Product_GUI";
             this.Text = "Product_GUI";
             this.Load += new System.EventHandler(this.Product_GUI_Load);
