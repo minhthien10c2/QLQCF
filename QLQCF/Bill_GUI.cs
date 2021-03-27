@@ -23,6 +23,7 @@ namespace QLQCF
         Category_BUS category_bus = new Category_BUS();
         Bill_BUS bill_bus = new Bill_BUS();
         Bill_Detail_BUS bill_detail_bus = new Bill_Detail_BUS();
+        Table_BUS table_bus = new Table_BUS();
         String id;
         double totalPrice = 0;
 
@@ -43,6 +44,10 @@ namespace QLQCF
                 c.HeaderCell.Style.Font = new Font("Corobel", 10F);
                 c.AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
             }
+
+            cbTable.DataSource = table_bus.GetAllTable();
+            cbTable.DisplayMember = "name";
+            cbTable.ValueMember = "id";
 
             cbCategory.DataSource = category_bus.GetAllCategory();
             cbCategory.DisplayMember = "name";
@@ -144,7 +149,7 @@ namespace QLQCF
             {
                 if (bill_bus.GetBillByID(txtID.Text).Rows.Count == 0)
                 {
-                    Bill_DTO bill_dto = new Bill_DTO(txtID.Text, DateTime.Now, double.Parse(txtTotalPrice.Text), "MB01");
+                    Bill_DTO bill_dto = new Bill_DTO(txtID.Text, DateTime.Now, double.Parse(txtTotalPrice.Text), cbTable.SelectedValue.ToString());
 
                     if (bill_bus.AddNewBill(bill_dto))
                     {
@@ -159,6 +164,7 @@ namespace QLQCF
                            bill_detail_bus.AddNewBill_Detail(bill_detail_dto);
                         }
                         MessageBox.Show("Thêm thành công");
+                        clear();
                         dgvBill.DataSource = bill_bus.GetAllBill();              
                     }
 
@@ -207,7 +213,7 @@ namespace QLQCF
                 String idNew = txtID.Text;
                 if (idNew == id)
                 {
-                    Bill_DTO bill_dto = new Bill_DTO(txtID.Text, DateTime.Now, double.Parse(txtTotalPrice.Text), "MB01");
+                    Bill_DTO bill_dto = new Bill_DTO(txtID.Text, DateTime.Now, double.Parse(txtTotalPrice.Text), cbTable.SelectedValue.ToString());
 
                     if (bill_bus.UpdateBill(bill_dto) && bill_detail_bus.DeleteBill_Detail(id))
                     {
@@ -222,6 +228,7 @@ namespace QLQCF
                             bill_detail_bus.AddNewBill_Detail(bill_detail_dto);
                         }
                         MessageBox.Show("Sửa thành công");
+                        clear();
                         dgvBill.DataSource = bill_bus.GetAllBill();
                     }
                 }
@@ -245,6 +252,7 @@ namespace QLQCF
                         if (bill_bus.DeleteBill(txtID.Text))
                         {
                             MessageBox.Show("Xoá thành công");
+                            clear();
                             dgvBill.DataSource = bill_bus.GetAllBill();
                         }
 
@@ -266,6 +274,13 @@ namespace QLQCF
             DataView DV = new DataView(bill_bus.GetAllBill());
             DV.RowFilter = "" + cbSearch.SelectedValue + " like '%" + txtSearch.Text + "%'";
             dgvBill.DataSource = DV;
+        }
+
+        public void clear()
+        {
+            txtID.Clear();
+            txtTotalPrice.Clear();
+            lbxProduct.Items.Clear();
         }
 
     }

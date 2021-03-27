@@ -88,7 +88,8 @@ namespace QLQCF
             txtPassword.Clear();
             txtName.Clear();
             txtAddress.Clear();
-            txtPhone.Clear();
+            txtPhone.Text = "Chỉ nhập số";
+            txtPhone.ForeColor = Color.Gray;
             cbAuth.SelectedIndex = 0;
             cbGender.SelectedIndex = 0;
         }
@@ -194,6 +195,7 @@ namespace QLQCF
             cbAuth.Text = dgvAccount.CurrentRow.Cells[2].Value.ToString();
             txtName.Text = dgvAccount.CurrentRow.Cells[3].Value.ToString();
             cbGender.Text = dgvAccount.CurrentRow.Cells[4].Value.ToString();
+            txtPhone.ForeColor = Color.Black;
             txtPhone.Text = dgvAccount.CurrentRow.Cells[5].Value.ToString();
             txtAddress.Text = dgvAccount.CurrentRow.Cells[6].Value.ToString();
             id = dgvAccount.CurrentRow.Cells[0].Value.ToString();

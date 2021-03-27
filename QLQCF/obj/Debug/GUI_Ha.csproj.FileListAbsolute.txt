@@ -6,7 +6,6 @@ C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\bin\Debug\DAL.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\bin\Debug\BUS.pdb
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\bin\Debug\DAL.pdb
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\GUI_Ha.csprojResolveAssemblyReference.cache
-C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Form1.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Properties.Resources.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\GUI_Ha.csproj.GenerateResource.Cache
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.exe
@@ -44,3 +43,10 @@ D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.SalesReport.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Account_GUI.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.ChangePassword_GUI.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Main.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Account_GUI.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.ChangePassword_GUI.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Main.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.ProductReport.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.SalesReport.resources
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\RdlCompile.cache
+C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\RdlCompile.compiled

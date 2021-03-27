@@ -62,7 +62,8 @@ namespace QLQCF
         private void Clear()
         {
             txtID.Clear();
-            txtPrice.Clear();
+            txtPrice.Text = "Chỉ nhập số";
+            txtPrice.ForeColor = Color.Gray;
             txtProductName.Clear();
             cbCategory.SelectedItem = 1;
         }
@@ -159,6 +160,7 @@ namespace QLQCF
         {
             txtID.Text = dgvProduct.CurrentRow.Cells[0].Value.ToString();
             txtProductName.Text = dgvProduct.CurrentRow.Cells[1].Value.ToString();
+            txtPrice.ForeColor = Color.Gray;
             txtPrice.Text = dgvProduct.CurrentRow.Cells[2].Value.ToString();
             cbCategory.Text = dgvProduct.CurrentRow.Cells[4].Value.ToString();
             id = dgvProduct.CurrentRow.Cells[0].Value.ToString();
