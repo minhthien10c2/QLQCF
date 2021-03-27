@@ -15,7 +15,8 @@ namespace QLQCF
     public partial class Login : Form
     {
         public bool loginCheck = false;
-        public int auth;
+        public String auth;
+        public String account;
 
         public Login()
         {
@@ -28,12 +29,13 @@ namespace QLQCF
         {
             if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtPassword.Text))
             {
-                Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, 0, "", 0, 0, "");
+                Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, "", "", "", 0, "");
                 DataTable tb = account_bus.CheckAccount(account_dto);
                 if (tb.Rows.Count > 0)
                 {
                     loginCheck = true;
-                    auth = tb.Rows[0].Field<int>("auth");
+                    auth = tb.Rows[0].Field<String>("auth");
+                    account = tb.Rows[0].Field<String>("user_name");
                     MessageBox.Show("Đăng nhập thành công");
                     this.Close();
                 }
@@ -56,13 +58,14 @@ namespace QLQCF
             if (e.KeyChar == Convert.ToChar(Keys.Enter))
             {
                 if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtPassword.Text))
-                {                   
-                    Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, 0, "", 0, 0, "");
+                {
+                    Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, "", "", "", 0, "");
                     DataTable tb = account_bus.CheckAccount(account_dto);
                     if (tb.Rows.Count > 0)
                     {
                         loginCheck = true;
-                        auth = tb.Rows[0].Field<int>("auth");
+                        auth = tb.Rows[0].Field<String>("auth");
+                        account = tb.Rows[0].Field<String>("user_name");
                         MessageBox.Show("Đăng nhập thành công");
                         this.Close();
                     }
@@ -82,12 +85,13 @@ namespace QLQCF
             {
                 if (!string.IsNullOrEmpty(txtUserName.Text) && !string.IsNullOrEmpty(txtPassword.Text))
                 {
-                    Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, 0, "", 0, 0, "");
+                    Account_DTO account_dto = new Account_DTO(txtUserName.Text, txtPassword.Text, "", "", "", 0, "");
                     DataTable tb = account_bus.CheckAccount(account_dto);
                     if (tb.Rows.Count > 0)
                     {
                         loginCheck = true;
-                        auth = tb.Rows[0].Field<int>("auth");
+                        auth = tb.Rows[0].Field<String>("auth");
+                        account = tb.Rows[0].Field<String>("user_name");
                         MessageBox.Show("Đăng nhập thành công");
                         this.Close();
                     }
@@ -99,6 +103,11 @@ namespace QLQCF
                     MessageBox.Show("Để đăng nhập bạn cần phải nhập đầy đủ tài khoản và mật khẩu.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }
             }
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

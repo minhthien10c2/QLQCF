@@ -38,7 +38,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.btnExit = new System.Windows.Forms.Button();
             this.btnLogin = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -161,28 +160,12 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnExit);
             this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(47, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(329, 43);
             this.panel2.TabIndex = 0;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.SteelBlue;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnExit.Location = new System.Drawing.Point(176, 6);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(106, 34);
-            this.btnExit.TabIndex = 7;
-            this.btnExit.Text = "Thoát";
-            this.btnExit.UseVisualStyleBackColor = false;
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
             // btnLogin
             // 
@@ -191,7 +174,7 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.btnLogin.Location = new System.Drawing.Point(54, 6);
+            this.btnLogin.Location = new System.Drawing.Point(112, 3);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(106, 34);
             this.btnLogin.TabIndex = 6;
@@ -203,6 +186,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(429, 257);
             this.ControlBox = false;
             this.Controls.Add(this.tableLayoutPanel1);
@@ -210,6 +194,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -233,7 +218,6 @@
         private System.Windows.Forms.TextBox txtUserName;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel3;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Button btnLogin;
     }
 }

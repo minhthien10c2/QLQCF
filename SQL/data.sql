@@ -6,7 +6,11 @@ go
 create table account(
 	user_name varchar(100) NOT NULL,
 	password varchar(100) NOT NULL,
-	auth int NOT NULL,
+	auth nvarchar(20) NOT NULL,
+	name nvarchar(100) NOT NULL,
+	gender nvarchar(10) NOT NULL,
+	phone int NOT NULL,
+	address nvarchar(200) NOT NULL,
 	primary key(user_name),
 );
 
@@ -40,8 +44,7 @@ go
 
 create table bill(
 	id varchar(10) NOT NULL,
-	check_in datetime NOT NULL,
-	check_out datetime NOT NULL,
+	check_in date NOT NULL,
 	total_price float NOT NULL,
 	id_table varchar(10) NOT NULL FOREIGN KEY REFERENCES table_cf(id),
 	primary key(id),

@@ -11,7 +11,6 @@ namespace DTO_Ha
         private String id;
         private double totalPrice;
         private DateTime checkIn;
-        private DateTime checkOut;
         private String idTable;
 
         public String Id
@@ -24,12 +23,6 @@ namespace DTO_Ha
         {
             get { return checkIn; }
             set { checkIn = value; }
-        }
-
-        public DateTime CheckOut
-        {
-            get { return checkOut; }
-            set { checkOut = value; }
         }
 
         public double TotalPrice
@@ -49,11 +42,10 @@ namespace DTO_Ha
 
         }
 
-        public Bill_DTO(String id, DateTime checkin, DateTime checkout, double totalprice, String idtable)
+        public Bill_DTO(String id, DateTime checkin, double totalprice, String idtable)
         {
             this.id = id;
             this.checkIn = checkin;
-            this.checkOut = checkout;
             this.totalPrice = totalprice;
             this.idTable = idtable;
         }

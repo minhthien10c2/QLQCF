@@ -10,9 +10,9 @@ namespace DTO_Ha
     {
         private String UserName;
         private String Password;
-        private int Auth;
+        private String Auth;
         private String Name;
-        private int Gender;
+        private String Gender;
         private int Phone;
         private String Address;
 
@@ -28,7 +28,7 @@ namespace DTO_Ha
             set { Password = value; }
         }
 
-        public int Auth1
+        public String Auth1
         {
             get { return Auth; }
             set { Auth = value; }
@@ -40,7 +40,7 @@ namespace DTO_Ha
             set { Name = value; }
         }
 
-        public int Gender1
+        public String Gender1
         {
             get { return Gender; }
             set { Gender = value; }
@@ -62,7 +62,7 @@ namespace DTO_Ha
         {
         }
 
-        public Account_DTO(String username, String password, int auth, String name, int gender, int phone, String address)
+        public Account_DTO(String username, String password, String auth, String name, String gender, int phone, String address)
         {
             this.UserName = username;
             this.Password = password;

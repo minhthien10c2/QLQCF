@@ -170,5 +170,31 @@ namespace QLQCF
             DV.RowFilter = "" + cbSearch.SelectedValue + " like '%" + txtSearch.Text + "%'";
             dgvProduct.DataSource = DV;
         }
+
+        private void txtPrice_Enter(object sender, EventArgs e)
+        {
+            if (txtPrice.Text == "Chỉ nhập số")
+            {
+                txtPrice.Clear();
+                txtPrice.ForeColor = Color.Black;
+            }
+        }
+
+        private void txtPrice_Leave(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtPrice.Text))
+            {
+                txtPrice.Text = "Chỉ nhập số";
+                txtPrice.ForeColor = Color.Gray;
+            }
+        }
+
+        private void txtPrice_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && e.KeyChar != 8)
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

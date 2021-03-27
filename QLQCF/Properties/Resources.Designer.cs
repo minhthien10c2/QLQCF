@@ -59,25 +59,5 @@ namespace QLQCF.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Abstract_world_network_connection {
-            get {
-                object obj = ResourceManager.GetObject("Abstract-world-network-connection", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap connecting_dots_background_2604 {
-            get {
-                object obj = ResourceManager.GetObject("connecting dots background 2604", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }

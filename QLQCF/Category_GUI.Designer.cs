@@ -59,6 +59,7 @@
             // 
             // dgvCategory
             // 
+            this.dgvCategory.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvCategory.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCategory.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvCategory.Location = new System.Drawing.Point(3, 226);
@@ -299,6 +300,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.ClientSize = new System.Drawing.Size(735, 465);
             this.Controls.Add(this.tableLayoutPanel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

@@ -12,7 +12,7 @@ namespace DAL_Ha
     {
         public DataTable GetAllBill()
         {
-            String query = "SELECT * FROM bill";
+            String query = "SELECT bill.*, table_cf.name FROM bill, table_cf where bill.id_table = table_cf.id";
             return DBConfig.ExecuteGetData(query);
         }
 
@@ -30,34 +30,32 @@ namespace DAL_Ha
 
         public bool AddNewBill(Bill_DTO bill)
         {
-            int parameterCount = 5;
+            int parameterCount = 4;
             string[] parameterName = new string[parameterCount];
             object[] parameterValue = new object[parameterCount];
 
             parameterName[0] = "@id"; parameterValue[0] = bill.Id;
             parameterName[1] = "@check_in"; parameterValue[1] = bill.CheckIn;
-            parameterName[2] = "@check_out"; parameterValue[2] = bill.CheckOut;
-            parameterName[3] = "@total_price"; parameterValue[3] = bill.TotalPrice;
-            parameterName[4] = "@id_table"; parameterValue[4] = bill.IdTable;
+            parameterName[2] = "@total_price"; parameterValue[2] = bill.TotalPrice;
+            parameterName[3] = "@id_table"; parameterValue[3] = bill.IdTable;
 
-            String query = "INSERT INTO bill(id, check_in, check_out, total_price, id_table) VALUES (@id, @check_in, @check_out, @total_price, @id_table)";
+            String query = "INSERT INTO bill(id, check_in, total_price, id_table) VALUES (@id, @check_in, @total_price, @id_table)";
             return DBConfig.ExecuteNonData(query, parameterName, parameterValue, parameterCount);
         }
 
         public bool UpdateBill(Bill_DTO bill)
         {
 
-            int parameterCount = 5;
+            int parameterCount = 4;
             string[] parameterName = new string[parameterCount];
             object[] parameterValue = new object[parameterCount];
 
             parameterName[0] = "@id"; parameterValue[0] = bill.Id;
             parameterName[1] = "@check_in"; parameterValue[1] = bill.CheckIn;
-            parameterName[2] = "@check_out"; parameterValue[2] = bill.CheckOut;
-            parameterName[3] = "@total_price"; parameterValue[3] = bill.TotalPrice;
-            parameterName[4] = "@id_table"; parameterValue[4] = bill.IdTable;
+            parameterName[2] = "@total_price"; parameterValue[2] = bill.TotalPrice;
+            parameterName[3] = "@id_table"; parameterValue[3] = bill.IdTable;
 
-            String query = "UPDATE bill SET check_in = @check_in, check_out = @check_out, total_price = @total_price, id_table = @id_table WHERE id = @id";
+            String query = "UPDATE bill SET total_price = @total_price, id_table = @id_table WHERE id = @id";
             return DBConfig.ExecuteNonData(query, parameterName, parameterValue, parameterCount);
         }
 

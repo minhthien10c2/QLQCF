@@ -16,15 +16,15 @@ namespace DAL_Ha
             return DBConfig.ExecuteGetData(query);
         }
 
-        public DataTable GetBill_DetailByID(String id)
+        public DataTable GetBill_DetailByID(String id_bill)
         {
             int parameterCount = 1;
             string[] parameterName = new string[parameterCount];
             object[] parameterValue = new object[parameterCount];
 
-            parameterName[0] = "@id"; parameterValue[0] = id;
+            parameterName[0] = "@id_bill"; parameterValue[0] = id_bill;
 
-            String query = "SELECT * FROM bill_detail WHERE id = @id";
+            String query = "SELECT * FROM bill_detail WHERE id_bill = @id_bill";
             return DBConfig.ExecuteGetData(query, parameterName, parameterValue, parameterCount);
         }
 
@@ -65,7 +65,7 @@ namespace DAL_Ha
 
             parameterName[0] = "@id"; parameterValue[0] = id;
 
-            String query = "DELETE bill_detail WHERE id = @id";
+            String query = "DELETE bill_detail WHERE id_bill = @id";
             return DBConfig.ExecuteNonData(query, parameterName, parameterValue, parameterCount);
         }
     }

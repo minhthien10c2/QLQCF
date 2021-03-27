@@ -5,6 +5,5 @@ C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\obj\Debug\DTO_Ha.dll
 C:\Users\Administrator\Documents\GitHub\QLQCF\DTO\obj\Debug\DTO_Ha.pdb
 D:\Univesity\SYNC\HAUCAC\QLQCF\DTO\bin\Debug\DTO_Ha.dll
 D:\Univesity\SYNC\HAUCAC\QLQCF\DTO\bin\Debug\DTO_Ha.pdb
-D:\Univesity\SYNC\HAUCAC\QLQCF\DTO\obj\Debug\DTO_Ha.csprojResolveAssemblyReference.cache
 D:\Univesity\SYNC\HAUCAC\QLQCF\DTO\obj\Debug\DTO_Ha.dll
 D:\Univesity\SYNC\HAUCAC\QLQCF\DTO\obj\Debug\DTO_Ha.pdb

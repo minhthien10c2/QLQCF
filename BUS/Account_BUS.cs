@@ -14,6 +14,16 @@ namespace BUS_Ha
     {
         Account_DAL account_dal = new Account_DAL();
 
+        public DataTable GetAllAccount()
+        {
+            return account_dal.GetAllAccount();
+        }
+
+        public DataTable GetAccountByUserName(String user_name)
+        {
+            return account_dal.GetAccountByUserName(user_name);
+        }
+
         public DataTable CheckAccount(Account_DTO account)
         {
             Account_BUS account_bus = new Account_BUS();
@@ -30,6 +40,15 @@ namespace BUS_Ha
             account.Password1 = account_bus.GetMd5Hash(md5Hash, account.Password1);
 
             return account_dal.AddNewAccount(account);
+        }
+
+        public bool ChangePassword(Account_DTO account)
+        {
+            Account_BUS account_bus = new Account_BUS();
+            MD5 md5Hash = MD5.Create();
+            account.Password1 = account_bus.GetMd5Hash(md5Hash, account.Password1);
+
+            return account_dal.ChangePassword(account);
         }
 
         public bool UpdateAccount(Account_DTO account)

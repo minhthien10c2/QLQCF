@@ -19,8 +19,6 @@ C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Table_GUI.re
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Bill_GUI.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Login.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.exe.config
-D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.exe
-D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.pdb
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.exe
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\QLQCF.pdb
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\BUS.dll
@@ -32,9 +30,17 @@ D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\bin\Debug\DAL.pdb
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\GUI_Ha.csprojResolveAssemblyReference.cache
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Bill_GUI.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Category_GUI.resources
-D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Form1.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Login.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Product_GUI.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Properties.Resources.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Table_GUI.resources
 D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\GUI_Ha.csproj.GenerateResource.Cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.exe
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.pdb
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\RdlCompile.cache
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\RdlCompile.compiled
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.ProductReport.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.SalesReport.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Account_GUI.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.ChangePassword_GUI.resources
+D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Main.resources

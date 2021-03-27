@@ -17,9 +17,9 @@ namespace BUS_Ha
             return bill_DAL.GetAllBill();
         }
 
-        public DataTable GetBillByID(String id)
+        public DataTable GetBillByID(String id_bill)
         {
-            return bill_DAL.GetBillByID(id);
+            return bill_DAL.GetBillByID(id_bill);
         }
 
         public bool AddNewBill(Bill_DTO bill)

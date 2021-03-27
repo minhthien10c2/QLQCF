@@ -63,6 +63,7 @@
             // 
             // tableLayoutPanel1
             // 
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 2);
@@ -246,10 +247,15 @@
             // 
             // txtPrice
             // 
+            this.txtPrice.ForeColor = System.Drawing.Color.Gray;
             this.txtPrice.Location = new System.Drawing.Point(104, 64);
             this.txtPrice.Name = "txtPrice";
             this.txtPrice.Size = new System.Drawing.Size(194, 20);
             this.txtPrice.TabIndex = 3;
+            this.txtPrice.Text = "Chỉ nhập số";
+            this.txtPrice.Enter += new System.EventHandler(this.txtPrice_Enter);
+            this.txtPrice.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPrice_KeyPress);
+            this.txtPrice.Leave += new System.EventHandler(this.txtPrice_Leave);
             // 
             // txtProductName
             // 
@@ -331,6 +337,7 @@
             // 
             // dgvProduct
             // 
+            this.dgvProduct.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
             this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvProduct.Location = new System.Drawing.Point(3, 278);

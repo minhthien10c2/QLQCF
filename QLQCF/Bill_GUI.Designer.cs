@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvProduct = new System.Windows.Forms.DataGridView();
+            this.dgvBill = new System.Windows.Forms.DataGridView();
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.cbSearch = new System.Windows.Forms.ComboBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -55,7 +55,7 @@
             this.tableLayoutPanel5 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel4.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -64,16 +64,17 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dgvProduct
+            // dgvBill
             // 
-            this.dgvProduct.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.dgvProduct.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvProduct.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvProduct.Location = new System.Drawing.Point(3, 359);
-            this.dgvProduct.Name = "dgvProduct";
-            this.dgvProduct.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvProduct.Size = new System.Drawing.Size(854, 158);
-            this.dgvProduct.TabIndex = 10;
+            this.dgvBill.BackgroundColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.dgvBill.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvBill.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvBill.Location = new System.Drawing.Point(3, 359);
+            this.dgvBill.Name = "dgvBill";
+            this.dgvBill.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvBill.Size = new System.Drawing.Size(854, 158);
+            this.dgvBill.TabIndex = 10;
+            this.dgvBill.DoubleClick += new System.EventHandler(this.dgvProduct_DoubleClick);
             // 
             // txtSearch
             // 
@@ -81,6 +82,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.Size = new System.Drawing.Size(256, 20);
             this.txtSearch.TabIndex = 9;
+            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
             // 
             // cbSearch
             // 
@@ -219,6 +221,7 @@
             // 
             this.txtTotalPrice.Location = new System.Drawing.Point(124, 168);
             this.txtTotalPrice.Name = "txtTotalPrice";
+            this.txtTotalPrice.ReadOnly = true;
             this.txtTotalPrice.Size = new System.Drawing.Size(194, 20);
             this.txtTotalPrice.TabIndex = 3;
             // 
@@ -229,9 +232,9 @@
             this.label3.ForeColor = System.Drawing.Color.CornflowerBlue;
             this.label3.Location = new System.Drawing.Point(56, 169);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 16);
+            this.label3.Size = new System.Drawing.Size(64, 16);
             this.label3.TabIndex = 1;
-            this.label3.Text = "Tổng giá";
+            this.label3.Text = "Tổng tiền";
             // 
             // label2
             // 
@@ -246,7 +249,7 @@
             // 
             // tableLayoutPanel2
             // 
-            this.tableLayoutPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel2.ColumnCount = 3;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 422F));
@@ -274,6 +277,7 @@
             this.btnDelete.TabIndex = 7;
             this.btnDelete.Text = "Xoá";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnAdd
             // 
@@ -313,6 +317,7 @@
             this.btnUpdate.TabIndex = 6;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseVisualStyleBackColor = false;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // panel1
             // 
@@ -337,6 +342,7 @@
             // 
             // tableLayoutPanel5
             // 
+            this.tableLayoutPanel5.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel5.ColumnCount = 3;
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel5.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 307F));
@@ -352,14 +358,14 @@
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel5, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.dgvProduct, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.dgvBill, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -375,7 +381,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Tahoma", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Highlight;
@@ -397,7 +403,7 @@
             this.Name = "Bill_GUI";
             this.Text = "Bill_GUI";
             this.Load += new System.EventHandler(this.Bill_GUI_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvProduct)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvBill)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -413,7 +419,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvProduct;
+        private System.Windows.Forms.DataGridView dgvBill;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.ComboBox cbSearch;
         private System.Windows.Forms.Panel panel5;
