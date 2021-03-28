@@ -46,7 +46,6 @@ D:\Univesity\SYNC\HAUCAC\QLQCF\QLQCF\obj\Debug\QLQCF.Main.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Account_GUI.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.ChangePassword_GUI.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.Main.resources
-C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.ProductReport.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\QLQCF.SalesReport.resources
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\RdlCompile.cache
 C:\Users\Administrator\Documents\GitHub\QLQCF\QLQCF\obj\Debug\RdlCompile.compiled

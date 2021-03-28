@@ -29,7 +29,6 @@ namespace QLQCF
         Product_GUI product_gui;
         Table_GUI table_gui;
         SalesReport sale_rp_gui;
-        ProductReport product_rp_gui;
         Account_GUI account_gui;
         ChangePassword_GUI change_password_gui;
         private void đăngNhậpToolStripMenuItem_Click(object sender, EventArgs e)
@@ -126,14 +125,6 @@ namespace QLQCF
             sale_rp_gui = new SalesReport();
             panel1.Controls.Clear();
             OpenChildForm(sale_rp_gui, sender);           
-        }
-
-        private void thốngKêSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            product_rp_gui = new ProductReport();
-            panel1.Controls.Clear();
-            OpenChildForm(product_rp_gui, sender);
-            
         }
 
         private void quảnLýTàiKhoảnToolStripMenuItem_Click(object sender, EventArgs e)

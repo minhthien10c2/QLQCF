@@ -160,7 +160,7 @@ namespace QLQCF
         {
             txtID.Text = dgvProduct.CurrentRow.Cells[0].Value.ToString();
             txtProductName.Text = dgvProduct.CurrentRow.Cells[1].Value.ToString();
-            txtPrice.ForeColor = Color.Gray;
+            txtPrice.ForeColor = Color.Black;
             txtPrice.Text = dgvProduct.CurrentRow.Cells[2].Value.ToString();
             cbCategory.Text = dgvProduct.CurrentRow.Cells[4].Value.ToString();
             id = dgvProduct.CurrentRow.Cells[0].Value.ToString();
@@ -197,6 +197,13 @@ namespace QLQCF
             {
                 e.Handled = true;
             }
+        }
+
+        private void btnExcel_Click(object sender, EventArgs e)
+        {
+            ExportExcel excel = new ExportExcel();
+            DataTable dt = (DataTable)(dgvProduct.DataSource);
+            excel.Export(dt, "san pham", "DANH SÁCH SẢN PHẨM");
         }
     }
 }
